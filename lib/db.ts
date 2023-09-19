@@ -1,15 +1,14 @@
-import { createPool } from 'mysql2/promise';
+import { createPool, Pool, PoolConnection } from 'mariadb';
 
-let pool;
+let pool: Pool;
 
 function getPool() {
     if (!pool) {
         pool = createPool({
-        host: process.env.DB_HOST,
-        port: 3307, 
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME,
+            host: process.env.DB_HOST,
+            user: process.env.DB_USER,
+            password: process.env.DB_PASSWORD,
+            database: process.env.DB_NAME,
         });
     }
 
@@ -17,7 +16,7 @@ function getPool() {
 }
 
 export async function saveUrlPair(shortUrl:string, originalUrl:string): Promise<void> {
-    const conn = await getPool().getConnection();
+    const conn : PoolConnection | undefined= await getPool().getConnection();
     try{
         await conn.query(`INSERT INTO saveURL (longURL, shortURL) VALUES (?, ?);`, [originalUrl,shortUrl]);
     } finally{
