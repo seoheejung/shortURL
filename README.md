@@ -12,7 +12,7 @@ https://sul.run.goorm.site/
 #### 💡 필요 패키지
 ```
 npm install typescript -g 
-npm install next react react-dom typescript @types/react @types/node mysql2 nanoid
+npm install next react react-dom typescript @types/react @types/node mariadb nanoid
 npm install --save-dev ts-node nodemon
 npm install --save-dev @types/react-dom
 ```
