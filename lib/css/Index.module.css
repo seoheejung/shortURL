@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bodyContainer{
+        /* 결과 컨테이너 스타일 */
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-family: 'NeoDunggeunmoPro-Regular'; /* 폰트 변경 */
+        margin: 0;
+        padding: 0;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 98vh;
+    background-color: #C4DFDF;
+    width: 100vh;
+}
+
+.logoText {
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'LOTTERIACHAB'; /* 폰트 변경 */
+    position: relative;
+    top: 3%;
+    font-size: 30px;
+}
+
+
+
+.mainText {
+    position: relative;
+    top: 8%;
+    margin-top: 5px;
+    text-align: center;
+   /*  padding: 20px 10px; 위 아래 패딩 조정 */
+    color: white; /* 글자색 변경 */
+    font-size: 25px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .3); /* x-offset y-offset blur-radius color */
+    opacity: 0; /* 처음에는 텍스트를 보이지 않게 설정 */
+    
+    animation-name: fadeIn; /* 애니메이션 이름 설정 */
+    animation-duration: 2s; /* 애니메이션 지속 시간 설정 (2초) */
+    /* 애니메이션이 끝난 후 마지막 프레임을 유지하도록 설정 */
+    animation-fill-mode : forwards ;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity :1 ;
+    }
+}
+
+.subText {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    /* 그림자 추가 */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .3); /* x-offset y-offset blur-radius color */
+}
+
+
+.formContainer {
+    position: relative;
+    top: 8%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.url-input, .submit-button {
+    padding:10px;
+    margin: 5px;
+}
+
+.url-input{
+    border-radius :20px; 
+    border:none; 
+    width:65%;
+}
+
+.resultContainer {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+.short-url-input {
+    /* input 박스 스타일 */
+    padding: 10px 20px;
+    border-radius: 50px; 
+    border: none; 
+    background-color: white; 
+    margin: 5px;
+    width: 55%; /* 가로 길이 설정 */
+}
+
+
+.submit-button, .copy-button, .move-button {
+    border:none ;   
+    border-radius : 5px ;
+    padding: 10px 5px;
+    color:#025464 ;  
+    background-color:#E3F4F4 ;  
+    width: 65%;
+    margin: 5px;
+}
+
+.subText, .formContainer, .resultContainer {
+    opacity :0 ; 
+    transform : translateY(40px) ;  
+    
+    animation-name : fadeInMoveUp ; 
+    animation-duration :1s ;
+    animation-delay :1s ; 
+    
+    animation-fill-mode : forwards ;
+}
+
+@keyframes fadeInMoveUp{
+    to{
+        opacity :1 ;
+        transform : translateY(0) ;
+    }
+}
+
+.footerContainer {
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    position: relative;
+    top: 900%;
+}
