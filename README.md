@@ -1,8 +1,11 @@
-## 📫 next.JS와 chatGPT를 활용하여 URL 단축 서비스 만들기
+## 📫 next.JS와 chatGPT를 활용하여 URL 변경 서비스 만들기
+
+### ✨사이트 주소
+https://sul.run.goorm.site/
 
 ### 📌 과정
 1. 사용자로부터 원래의 URL을 입력 받기
-2. 이 URL에 대한 고유한 짧은 URL을 생성하기
+2. URL에 대한 고유한 짧은 URL을 생성하기
 3. 원래의 URL과 짧은 URL을 데이터베이스에 저장하기
 4. 사용자가 짧은 URL을 방문하면, 데이터베이스에서 해당하는 원래의 URL을 찾아 리다이렉트 시키기
 
@@ -21,6 +24,7 @@ npm install --save-dev @types/react-dom
   - [shortId].tsx # 리다이렉션 페이지
 - lib
   - db.ts # 데이터베이스 연결 및 쿼리 함수들 
+  - css # css 파일이 있는 폴더
 - types.d.ts # 타입 정의 파일 
 ```
 #### 💡 데이터베이스 구조
@@ -50,6 +54,6 @@ npm run dev
 
 #### 💬 이후 작업
 ```
-CSS 작업
-서버  적용 (구름 IDE)
+CSS 작업 (완료)
+서버  적용 (구름 IDE 적용 완료)
 ```
