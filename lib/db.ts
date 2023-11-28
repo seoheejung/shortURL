@@ -9,6 +9,8 @@ function getPool() {
             user: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
             database: process.env.DB_NAME,
+            connectionLimit: 10, // 최대 연결 수
+            acquireTimeout: 10000, // 연결을 기다리는 시간 (10초)
         });
     }
 
