@@ -3,7 +3,3 @@ DB_USER=root
 DB_PASSWORD=password
 DB_NAME=shortURL
 
-DB_HOST=svc.sel5.cloudtype.app:31820
-DB_USER=root
-DB_PASSWORD=gmlwjd0520
-DB_NAME=shortURL
