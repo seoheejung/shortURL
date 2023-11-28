@@ -1,16 +1,15 @@
 import { createPool, Pool, PoolConnection } from 'mariadb';
 
-let pool: Pool;
+let pool: Pool | undefined;
 
 function getPool() {
     if (!pool) {
         pool = createPool({
-            host: process.env.DB_HOST,
-            user: process.env.DB_USER,
-            password: process.env.DB_PASSWORD,
-            database: process.env.DB_NAME,
-            connectionLimit: 10, // 최대 연결 수
-            acquireTimeout: 10000, // 연결을 기다리는 시간 (10초)
+            host: process.env.DB_HOST as string,
+            port: process.env.DB_PORT as unknown as number,
+            user: process.env.DB_USER as string,
+            password: process.env.DB_PASSWORD as string,
+            database: process.env.DB_NAME as string,
         });
     }
 
