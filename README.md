@@ -37,10 +37,12 @@ Talbe Name : saveURL
 ```
 CREATE TABLE `saveURL` (
   `idx` int(11) NOT NULL AUTO_INCREMENT,
-  `longURL` varchar(4000) DEFAULT NULL,
-  `shortURL` varchar(4000) DEFAULT NULL,
+  `long_url` varchar(4000) DEFAULT NULL,
+  `short_url` varchar(4000) DEFAULT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`idx`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 ```
 
 #### 💡 사이트 실행 방법

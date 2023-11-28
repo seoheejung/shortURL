@@ -18,7 +18,7 @@ function getPool() {
 export async function saveUrlPair(shortUrl:string, originalUrl:string): Promise<void> {
     const conn : PoolConnection | undefined= await getPool().getConnection();
     try{
-        await conn.query(`INSERT INTO saveURL (longURL, shortURL) VALUES (?, ?);`, [originalUrl,shortUrl]);
+        await conn.query(`INSERT INTO saveURL (long_url, short_url) VALUES (?, ?);`, [originalUrl,shortUrl]);
     } finally{
         if(conn)
         conn.release(); 
@@ -29,11 +29,12 @@ export async function getUrlByShortID(shortID:string): Promise<string | null>{
     const conn = await getPool().getConnection();
     let rows;
     try{
-        [rows] = await conn.query('SELECT * FROM saveURL WHERE shortURL=?;', [shortID]);
+        [rows] = await conn.query('SELECT * FROM saveURL WHERE short_url=?;', [shortID]);
     } finally{
         if(conn)
         conn.release(); 
     }
     
-	return rows[0]?.longURL || null;
+	return rows?.long_url || null;
+
 }

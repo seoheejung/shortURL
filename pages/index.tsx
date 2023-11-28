@@ -51,7 +51,7 @@ export default function Home() {
                     </div>
                     </>
                 )}
-                <footer>
+                <footer className={styles.footerClass}>
                     <div className={styles.footerContainer}>
                         <div className="copy">
                             사이트명 : SUL
