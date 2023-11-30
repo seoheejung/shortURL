@@ -2,5 +2,3 @@
 .env copy.local
 /node_modules
 .next
-sitemap.xml
-rss.xml

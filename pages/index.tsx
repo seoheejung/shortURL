@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import Head from 'next/head'
 import styles from '../lib/css/Index.module.css'; // Import the CSS module
 
 export default function Home() {
@@ -19,6 +20,13 @@ export default function Home() {
     };
 
     return (
+        <>
+        <Head>
+            <title>SUL  |  url 변경</title>
+            <meta name="description" content="숨기고 싶은 url 바꾸기" />
+            <meta name="keywords" content="url, url 숨기기, url 바꾸기, url 줄이기, url 주소 바꾸기, url 주소 변경" />
+            <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+        </Head>
         <div className={styles.bodyContainer}>
             <div className={styles.mainContainer}>
                 <a href='' className={styles.logoText}>SUL</a>
@@ -61,5 +69,6 @@ export default function Home() {
                 </footer>
             </div>
         </div>
+        </>
     );
 }
