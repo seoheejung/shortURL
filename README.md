@@ -1,8 +1,7 @@
 ## 📫 next.JS와 chatGPT를 활용하여 URL 변경 서비스 만들기
 
 ### ✨사이트 주소
-https://sul.run.goorm.site/    
-~~www.sul1.store~~
+https://www.sul1.shop/
 
 ### 📌 과정
 1. 사용자로부터 원래의 URL을 입력 받기
@@ -69,7 +68,7 @@ pm2 start start.sh
 ```
 CSS 작업 (완료)
 서버  적용 (구름 IDE 적용 완료 / pm2 추가 완료)
-AWS 서버 이전
+AWS 서버 이전 (완료)
 구글 웹마스터 적용 (완료)
 네이버 웹마스터 적용 (완료)
 ```
