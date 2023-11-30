@@ -26,6 +26,7 @@ export default function Home() {
             <meta name="description" content="숨기고 싶은 url 바꾸기" />
             <meta name="keywords" content="url, url 숨기기, url 바꾸기, url 줄이기, url 주소 바꾸기, url 주소 변경" />
             <meta name="google-site-verification" content="2-0tNh9XPZPFoO2jAnZdZnIwkiTzGfVLhqPmHWJ9nJ0" />
+            <meta name="naver-site-verification" content="dec58f4ed9f333124c6d26cd954a270af177fea3" />
             <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
         </Head>
         <div className={styles.bodyContainer}>
