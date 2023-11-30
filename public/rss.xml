@@ -1,20 +1,20 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
     <channel>
     <title>
-    <![CDATA[ Untitled RSS Feed ]]>
+    <![CDATA[ SUL | url 변경 ]]>
     </title>
     <description>
-    <![CDATA[ Untitled RSS Feed ]]>
+    <![CDATA[ 숨기고 싶은 url 바꾸기 ]]>
     </description>
-    <link>https://sul.run.goorm.site/</link>
+    <link>https://www.sul1.shop/</link>
     <image>
-    <url>https://sul.run.goorm.site/favicon.ico</url>
-    <title>Untitled RSS Feed</title>
-    <link>https://sul.run.goorm.site/</link>
+    <url>https://www.sul1.shop/images/favicon.ico</url>
+    <title>SUL | url 변경</title>
+    <link>https://www.sul1.shop/</link>
     </image>
     <generator>https://rss.app</generator>
-    <lastBuildDate>Tue, 28 Nov 2023 13:15:33 GMT</lastBuildDate>
-    <atom:link href="https://rss.app/feeds/layRH0AciYB6Xlux.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 30 Nov 2023 14:47:14 GMT</lastBuildDate>
+    <atom:link href="https://rss.app/feeds/DQT2JyuynigJsMWI.xml" rel="self" type="application/rss+xml"/>
     <language>
     <![CDATA[ en ]]>
     </language>
@@ -22,10 +22,10 @@
     <title>
     <![CDATA[ SUL나의 URL을 다른 URL로 변경하세요숨기고 싶은 URL이 있다면 바꾸면 됩니다.변경사이트명 : SUL © 2023 seo.hj All Rights Reserved. ]]>
     </title>
-    <link>https://sul.run.goorm.site/#5456c8d120d11dc50608452b86f727a4</link>
-    <guid isPermaLink="false">e2ed9b81f4411d940937934609ad1fab</guid>
+    <link>https://www.sul1.shop/#5456c8d120d11dc50608452b86f727a4</link>
+    <guid isPermaLink="false">e8ff531ff2ab225e1d5c5edabffd4731</guid>
     <dc:creator>
-    <![CDATA[ sul.run.goorm.site ]]>
+    <![CDATA[ sul1.shop ]]>
     </dc:creator>
     </item>
     </channel>

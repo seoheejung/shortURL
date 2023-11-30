@@ -1,7 +1,16 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-    <url>
-    <loc>https://sul.run.goorm.site/</loc>
-    <lastmod>2023-11-28T13:16:53+00:00</lastmod>
-    </url>
-    </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.sul1.shop/</loc>
+  <lastmod>2023-11-30T14:47:52+00:00</lastmod>
+</url>
+
+
+</urlset>
