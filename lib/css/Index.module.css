@@ -123,6 +123,11 @@
     margin: 5px;
 }
 
+ /* 버튼을 클릭했을 때의 배경색 */
+.submit-button:active, .copy-button:active, .move-button:active {
+    background-color: #1f4141;
+}
+
 .subText, .formContainer, .resultContainer {
     opacity :0 ; 
     transform : translateY(40px) ;  
